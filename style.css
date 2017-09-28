@@ -1,7 +1,9 @@
 html {
     font-size: 10px;
-    background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
-    background-size: cover;
+    background: url(http://img.wennermedia.com/920-width/rs-233915-GettyImages-178696630_master.jpg) center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #000000;
 }
 body,html {
     margin: 0;
@@ -10,11 +12,13 @@ body,html {
 }
 
 .keys {
-    display: flex;
-    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, auto);
     min-height: 100vh;
     align-items: center;
     justify-content: center;
+
 }
 
 .key {
@@ -27,7 +31,7 @@ body,html {
     width: 10rem;
     text-align: center;
     color: white;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.9);
     text-shadow: 0 0 .5rem black;
 }
 
@@ -47,4 +51,49 @@ kbd {
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: #ffc600;
+}
+
+#s{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#a{
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#d{
+    grid-row: 2;
+    grid-column: 5;
+}
+
+#f{
+    grid-row: 3;
+    grid-column: 6;
+}
+
+#g{
+    grid-row: 4;
+    grid-column: 2;
+}
+
+#h{
+    grid-row: 5;
+    grid-column: 3;
+}
+
+#j{
+    grid-row: 5;
+    grid-column: 5;
+}
+
+#k{
+    grid-row: 4;
+    grid-column: 6;
+}
+
+#l{
+    grid-row: 4;
+    grid-column: 4;
 }
